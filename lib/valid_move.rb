@@ -5,7 +5,7 @@ def valid_move?(board, index)
     return false
   end
   # is index not already filled with a token
-  if position_taken?(board, index)
+  if position_taken?(board, index) == true
     return false
   else
     return true
