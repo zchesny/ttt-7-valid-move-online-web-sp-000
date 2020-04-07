@@ -4,13 +4,14 @@ def valid_move?(board, index)
   if index > 8 || index < 0
     return false
   end
+  # is index not already filled with a token
   if position_taken?(board, index)
     return false
   else
     return true
   end
 
-  # is index not already filled with a token
+
 end
 
 
